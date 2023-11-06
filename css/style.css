@@ -18,8 +18,8 @@
 body {
   background-color: var(--Dark-Blue);
   display: grid;
-  place-items: center; 
-  padding-inline: 1rem; 
+  place-items: center;
+  padding-inline: 1rem;
   font-size: 16px;
   font-family: var(--font);
   font-weight: 800;
@@ -29,16 +29,14 @@ body {
 .container {
   width: 100%;
   min-height: 315px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   background-color: var(--Dark-Grayish-Blue);
   padding-inline: 28px;
-  margin-top: 8.0625rem ;
+  margin-top: 8.0625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  
-  
 }
 .container__title {
   margin-top: 44px;
@@ -46,8 +44,7 @@ body {
   text-transform: uppercase;
   color: var(--Neon-Green);
   text-align: center;
-  margin-bottom: 30px;  
-  
+  margin-bottom: 30px;
 }
 .container__text {
   width: 100%;
@@ -56,14 +53,10 @@ body {
   font-size: 1.5em;
   color: var(--Light-Cyan);
   margin: 0 auto;
- 
-  
- 
 }
- .container__line-divider {
+.container__line-divider {
   width: 100%;
-  margin-top: 24px;
-  margin-bottom: 50px;
+  margin: 24px auto 50px auto;
 }
 .container__circle {
   display: flex;
@@ -76,51 +69,43 @@ body {
   border-radius: 50%;
   position: absolute;
   bottom: -1.875rem;
-  
-} 
-.container__circle:hover{
+}
+.container__circle:hover {
   box-shadow: 1px 1px 20px var(--Neon-Green);
-    
 }
 
 /* --------------------------------- footer --------------------------------- */
 
 .attribution {
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   text-align: center;
+  color: var(--Light-Cyan);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Neon-Green);
 }
-
 
 /* --------------------------------- Desktop -------------------------------- */
 
 @media screen and (min-width: 768px) {
   .container {
     width: 491px;
-    min-height: 300px;   
-    
+    min-height: 300px;
   }
 
-  .container__title {    
-    font-size: 0.875em;   
-    
+  .container__title {
+    font-size: 0.875em;
   }
 
   .container__text {
-    
     font-size: 1.75em;
     color: var(--Light-Cyan);
-    margin: 0 auto;    
-   
+    margin: 0 auto;
   }
 
   .container__circle {
-    
     bottom: -1.875rem;
     left: 212px;
     cursor: pointer;
-  } 
-  
+  }
 }
